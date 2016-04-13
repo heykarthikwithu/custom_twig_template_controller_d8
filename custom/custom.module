@@ -3,7 +3,7 @@
 function custom_theme($existing, $type, $theme, $path) {
   return array(
     'custom' => array(
-      'variables' => array('test_var' => NULL),
+      'variables' => array('test_var' => NULL, 'test_var_1' => NULL),
     ),
   );
 }

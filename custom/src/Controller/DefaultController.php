@@ -29,9 +29,13 @@ class DefaultController extends ControllerBase {
   }
 
   public function content() {
+    $form = \Drupal::formBuilder()->getForm('Drupal\custom\Form\DefaultForm');
+    $aa = drupal_render($form);
+    $a = '';
     return array(
       '#theme' => 'custom',
       '#test_var' => $this->t('Test Value kkkkk'),
+      '#test_var_1' => $aa,
     );
   }
 
