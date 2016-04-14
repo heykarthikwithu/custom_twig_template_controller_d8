@@ -29,7 +29,8 @@ class DefaultController extends ControllerBase {
   }
 
   public function content() {
-    $form = \Drupal::formBuilder()->getForm('Drupal\custom\Form\DefaultForm');
+    // $form = \Drupal::formBuilder()->getForm('Drupal\custom\Form\DefaultForm');
+    $form = \Drupal::formBuilder()->getForm('Drupal\ajax_example\Form\AjaxExampleForm');
     $aa = drupal_render($form);
     $a = '';
     return array(
